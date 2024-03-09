@@ -1,1 +1,4 @@
 .config/nvim
+.config/nvim.custom.bak
+.config/nvim.kickstart.bak
+.config/nvim_primeagen
