@@ -39,6 +39,10 @@ alias pf="neofetch"
 alias ai="ollama run codellama"
 alias aig="ollama run llama2-uncensored "
 
+alias ga="git add"
+alias gc="git commit"
+alias gp="git push"
+
 # DEV ENV & PROGRAMS
 __conda_setup="$('/home/deathblade287/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
