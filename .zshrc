@@ -1,7 +1,7 @@
 # LOADING BASH IN TTY
-# if [ "$XDG_SESSION_TYPE" = "tty" ] ; then
-#     bash
-# fi
+if [ "$XDG_SESSION_TYPE" = "tty" ] ; then
+    bash
+fi
 
 # OH-MY-ZSH 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
@@ -10,6 +10,9 @@ fi
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 source $ZSH/oh-my-zsh.sh
+
+# Start ZSH Shell
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # ALIASES
 alias cd="z"
@@ -31,12 +34,10 @@ alias focus="conda activate fooocus && python /home/deathblade287/Documents/Fooo
 alias clock="tty-clock -s -c -d 0.5"
 alias tmux="tmux -u"
 alias calc="qalc"
+alias pf="neofetch"
 
 alias ai="ollama run codellama"
 alias aig="ollama run llama2-uncensored "
-
-# Start ZSH Shell
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # DEV ENV & PROGRAMS
 __conda_setup="$('/home/deathblade287/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -51,10 +52,9 @@ else
 fi
 unset __conda_setup
 
-source /usr/share/nvm/init-nvm.sh
+# source /usr/share/nvm/init-nvm.sh
 eval "$(zoxide init zsh)"
-# source $HOME/.nix-profile/etc/profile.d/hm-session-vars.sh
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # INITIAL COMMAND(S)
 # neofetch
