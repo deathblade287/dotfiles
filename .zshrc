@@ -42,6 +42,12 @@ alias aig="ollama run llama2-uncensored "
 alias ga="git add"
 alias gc="git commit"
 alias gp="git push"
+alias gs="git status"
+
+alias t="tmux"
+alias ta="tmux attach"
+alias tk="tmux kill-session"
+alias tl="tmux ls"
 
 # DEV ENV & PROGRAMS
 __conda_setup="$('/home/deathblade287/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
