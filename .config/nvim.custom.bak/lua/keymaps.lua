@@ -1,7 +1,7 @@
 local keymap = vim.api.nvim_set_keymap
 local opts = {
-    noremap = true,
-    silent = false
+	noremap = true,
+	silent = false,
 }
 
 -- SYSTEM KEYMAPS --
@@ -44,10 +44,10 @@ keymap("n", "<leader>bn", ":bnext<CR>", opts)
 keymap("n", "<leader>bp", ":bprevious<CR>", opts)
 
 -- Insert --
-keymap('i', '<C-]>', 'copilot#Accept(“<CR>”)', {
-    silent = true,
-    expr = true,
-    noremap = true
+keymap("i", "<C-]>", "copilot#Accept(“<CR>”)", {
+	silent = true,
+	expr = true,
+	noremap = true,
 })
 -- Visual --
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)

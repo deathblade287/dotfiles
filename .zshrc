@@ -22,16 +22,16 @@ alias yay="paru"
 
 alias zsh-add='nvim ~/dotfiles/.zshrc'
 alias zsh-push='source ~/dotfiles/.zshrc'
-
 alias hypr="nvim ~/.config/hypr/hyprland.conf"
+
 alias find-git-origin="find . -type d -exec test -d '{}/.git' \; -print"
 
 alias v="nvim"
 alias f="fzf"
-alias fe="ranger"
+alias r="ranger"
 alias btop="btop --utf-force"
 alias focus="conda activate fooocus && python /home/deathblade287/Documents/Fooocus/entry_with_update.py"
-alias clock="tty-clock -s -c -d 0.5"
+alias clock="tty-clock -c"
 alias tmux="tmux -u"
 alias calc="qalc"
 alias pf="neofetch"
