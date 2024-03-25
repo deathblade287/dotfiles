@@ -37,5 +37,5 @@ alias tmux="tmux -u"
 
 # only tty
 alias gnome="sudo systemctl start gdm"
-
+alias chadwm='startx ~/.config/chadwm/scripts/run.sh'
 eval "$(zoxide init bash)"
