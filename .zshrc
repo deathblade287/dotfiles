@@ -11,7 +11,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 source $ZSH/oh-my-zsh.sh
 
-# Start ZSH Shell
+# START ZSH SHELL
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # ALIASES
@@ -63,9 +63,5 @@ else
 fi
 unset __conda_setup
 
-# source /usr/share/nvm/init-nvm.sh
+source /usr/share/nvm/init-nvm.sh
 eval "$(zoxide init zsh)"
-# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-# INITIAL COMMAND(S)
-# neofetch
