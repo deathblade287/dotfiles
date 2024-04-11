@@ -6,4 +6,4 @@
 3. Run `stow .` in this directory
 
 ## Neovim
-Neovim Config : https://github.com/deathblade287/nvim/tree/main
+Neovim Config : [https://github.com/deathblade287/nvim/tree/main](https://github.com/deathblade287/nvim)
